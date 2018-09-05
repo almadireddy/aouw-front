@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-js-getting-started',
+    modulePrefix: 'archive-of-unnamed-women',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
