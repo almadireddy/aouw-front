@@ -41,5 +41,8 @@
     "node": ">= 4"
   },
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "ember-cli-sass": "^8.0.1",
+    "sass": "^1.13.2"
+  }
 }
