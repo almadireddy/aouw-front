@@ -1,3 +1,11 @@
 <nav class="nav">
-  
+  <div class="title"><h1>{{title}}</h1></div>
+  <div class="links">
+    <ul class="nav-links">
+      <li>
+        {{#link-to "index" }}Home{{/link-to}}
+        {{#link-to "archive" }}Archive{{/link-to}}
+      </li>
+    </ul>
+  </div>
 </nav>
