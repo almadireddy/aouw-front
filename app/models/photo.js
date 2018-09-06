@@ -8,6 +8,6 @@ export default DS.Model.extend({
   year: DS.attr('number'),
   location: DS.attr('string'),
   description: DS.attr('string'),
-  collections: DS.belongsTo('collection'),
+  collection: DS.belongsTo('collection'),
   literature: DS.belongsTo('literature')
 });
