@@ -13,6 +13,7 @@ body, html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
+  color: $solid-dark-gray
 }
 
 a, p, li {
@@ -21,7 +22,7 @@ a, p, li {
 
 .nav {
   width: 100%;
-  background: $white;
+  background-color: lighten($tan, 15);
   padding: 50px;
   
   h1 {
