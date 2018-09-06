@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-import collection from './collection';
 
 export default DS.Model.extend({
   uuid: DS.attr('string'),
@@ -9,6 +8,6 @@ export default DS.Model.extend({
   year: DS.attr('number'),
   location: DS.attr('string'),
   description: DS.attr('string'),
-
-  collection: DS.belongsTo('collection')
+  collections: DS.belongsTo('collection'),
+  literature: DS.belongsTo('literature')
 });
