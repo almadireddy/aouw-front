@@ -1,7 +1,7 @@
-import Route from '@ember/routing/route';
+import Ember from 'ember';
 import { hash } from 'rsvp';
 
-export default Route.extend({
+export default Ember.Route.extend({
   model() {
     return hash({
       photos: this.store.findAll('photo'),
