@@ -1,5 +1,7 @@
-<div class="container">
-  {{#masonry-grid items=model.photos as |photo|}}
-    <img class="grid-image" src="https://images.nypl.org/index.php?id={{photo.nypl}}&t=w" alt="">
+<div class="full-container no-margin">
+  {{#masonry-grid items=model.photos percentPosition=true customLayout=true as |photo index grid|}}
+    {{#masonry-item item=photo grid=grid }} 
+      {{archive-photo photo=photo}}
+    {{/masonry-item}}
   {{/masonry-grid}}
 </div>
