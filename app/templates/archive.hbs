@@ -1,7 +1,7 @@
 <div class="full-container no-margin">
   {{#masonry-grid items=model.photos percentPosition=true customLayout=true as |photo index grid|}}
     {{#masonry-item item=photo grid=grid }} 
-      {{archive-photo photo=photo}}
+      {{archive-photo literature=model.literature photo=photo onclick='clicked'}}
     {{/masonry-item}}
   {{/masonry-grid}}
 </div>

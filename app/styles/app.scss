@@ -106,3 +106,27 @@ a, p, li {
 .masonry-item {
   width: 25%
 }
+
+.archive-photo-button {
+  .quote {
+    position: absolute;
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+  }
+  h3 {
+    opacity: 0;
+    background: linear-gradient(to top, $solid-dark-gray, transparent);
+    color: $solid-light-gray;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    left: 0;
+    padding: 25px;
+    transition: all .4s ease;
+  }
+}
+
+.show-quote h3 {
+  opacity: 1;
+}

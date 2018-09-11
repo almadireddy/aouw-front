@@ -7,7 +7,7 @@ export default Route.extend({
     return hash({
       photos: this.store.findAll('photo'),
       collections: this.store.findAll('collection'),
-      literatures: this.store.findAll('literature')
+      literature: this.store.findAll('literature')
     })
   }
 });
