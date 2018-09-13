@@ -9,11 +9,18 @@
 {{#if isShowingModal}} 
   {{#modal-dialog onClose="toggleModal" targetAttachment="center" translucentOverlay=true animatable=true}} 
     <div class="modal-content">
-      <div class="modal-left">
-        <img src={{imgSrc}} alt="">
+      <div class="image-quote">
+        <div class="modal-left">
+          <img src={{imgSrc}} alt="">
+        </div>
+        <div class="modal-right">
+          <div class="quote">
+            <h2>{{quote}}</h2>
+          </div>
+        </div>
       </div>
-      <div class="modal-right">
-        <h2>{{quote}}</h2>
+      <div class="info">
+        <h3>helo</h3>
       </div>
     </div>
   {{/modal-dialog}} 
