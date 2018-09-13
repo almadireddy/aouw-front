@@ -1,3 +1,4 @@
 <button class="archive-photo-button" onclick={{action "imageClicked"}}>
-  <img class="grid-image" src="https://images.nypl.org/index.php?id={{photo.nypl}}&t=w" alt="">
+   {{lazy-image url=(concat 'https://images.nypl.org/index.php?id=' photo.nypl '&t=w') class="grid-image"}}
+  {{!-- <img class="grid-image" src="https://images.nypl.org/index.php?id={{photo.nypl}}&t=w" alt=""> --}}
 </button>
