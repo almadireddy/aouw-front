@@ -1,6 +1,9 @@
 @import 'normalize';
 @import 'colors';
    
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
 * {
   margin: 0;
   padding: 0;
@@ -129,4 +132,42 @@ a, p, li {
 
 .show-quote h3 {
   opacity: 1;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .modal-left {
+    margin-right: 25px;
+
+    img {
+      max-width: 40vw;
+      border-radius: 10px;
+      margin: 0;
+    }
+  }
+
+  .modal-right {
+    width: 40vw;
+
+    h2 {
+      line-height: 50px;
+      font-size: 33px;
+
+      &::before {
+        content: '';
+        background: $white;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.ember-modal-dialog {
+  box-shadow: 0 15px 50px 0 $dark-gray;
+  margin-top: 15px;
+  padding: 25px;
 }

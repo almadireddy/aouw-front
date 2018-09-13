@@ -1,7 +1,20 @@
 <div class="full-container no-margin">
   {{#masonry-grid items=model.photos percentPosition=true customLayout=true as |photo index grid|}}
     {{#masonry-item item=photo grid=grid }} 
-      {{archive-photo literature=model.literature photo=photo onclick='clicked'}}
+      {{archive-photo literature=model.literature photo=photo show=(action 'showPictureModal')}}
     {{/masonry-item}}
   {{/masonry-grid}}
 </div>
+
+{{#if isShowingModal}} 
+  {{#modal-dialog onClose="toggleModal" targetAttachment="center" translucentOverlay=true animatable=true}} 
+    <div class="modal-content">
+      <div class="modal-left">
+        <img src={{imgSrc}} alt="">
+      </div>
+      <div class="modal-right">
+        <h2>{{quote}}</h2>
+      </div>
+    </div>
+  {{/modal-dialog}} 
+{{/if}}
