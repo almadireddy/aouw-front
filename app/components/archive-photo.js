@@ -12,7 +12,7 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    imageClicked(e) {
+    imageClicked() {
       this.sendAction('show', this.get('quote'), this.get('photo').get('nypl'));
     }
   }

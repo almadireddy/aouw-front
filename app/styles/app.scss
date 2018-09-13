@@ -145,7 +145,7 @@ a, p, li {
 
     img {
       max-width: 40vw;
-      border-radius: 10px;
+      border-radius: 15px;
       margin: 0;
     }
   }
@@ -166,8 +166,12 @@ a, p, li {
   }
 }
 
+.ember-modal-wrapper.emd-animatable.emd-wrapper-target-attachment-center .ember-modal-overlay {
+  background-color: rgba(20, 20, 20, 0.7)
+}
 .ember-modal-dialog {
   box-shadow: 0 15px 50px 0 $dark-gray;
   margin-top: 15px;
   padding: 25px;
+  background-color: $white
 }
