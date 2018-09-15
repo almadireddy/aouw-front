@@ -11,50 +11,57 @@
   flex-direction: column;
   
   .image-quote {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 
     .modal-left {
-      margin-right: 25px;
   
       img {
         max-width: 40vw;
-        border-radius: 15px;
         margin: 0;
       }
     }
   
     .modal-right {
-      width: 40vw;
-  
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px;
+
       .quote {
         width: 100%;
   
         h2 {
-          line-height: 50px;
-          font-size: 33px;
+          padding: 20px;
+          line-height: 45px;
+          font-size: 35px;
           width: 100%;
-  
-          &::before {
-            content: '';
-            background: $white;
-            height: 30px;
-          }
+          color: white;
+          transform: rotate(-3deg);
+          text-shadow: 0 5px 30px rgba(30, 30, 30, 0.5);
         }
       }
+    }
+  }
+
+  .info {
+    h2, h3, p, a, li {
+      color: rgba(20, 20, 20, 0.7);
     }
   }
 }
 
 .ember-modal-wrapper.emd-animatable.emd-wrapper-target-attachment-center .ember-modal-overlay {
-  background-color: rgba(20, 20, 20, 0.7)
+  background-color: rgba(20, 20, 20, 0.7);
 }
 .ember-modal-dialog {
   box-shadow: 0 15px 50px 0 $dark-gray;
   margin-top: 15px;
   padding: 25px;
-  background-color: $white
+  background-color: lighten($tan, 10)
+}
+
+.lazy-image-container {
+  background: rgba(30, 30, 30, 0.8)
 }

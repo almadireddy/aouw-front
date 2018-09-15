@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import '../scripts/fittext';
 
 export default Ember.Controller.extend({
   isShowingModal: false,

@@ -5,11 +5,11 @@
 }
 
 body, html {
-  background-color: lighten($tan, 25);
+  background-color: lighten($tan, 20);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Crete Round', serif;
   color: $solid-dark-gray
 }
 
@@ -46,8 +46,14 @@ a, p, li {
 }
 
 .grid-image {
-  max-width: 100%
+  width: 25vw;
+  img {
+    box-shadow: inset 0 0 100px rgba(20, 20, 20, 0.5);
+
+  }
 }
 .masonry-item {
-  width: 25%
+  width: 25%;
+  display: flex;
+  justify-content: center
 }
