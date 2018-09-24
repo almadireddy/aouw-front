@@ -17,7 +17,6 @@
 
     .modal-left {
       img {
-        max-width: 40vw;
         margin: 0;
       }
     }
@@ -62,7 +61,6 @@
       .click-to-show {
         flex: 1;
         margin-right: 15px;
-        max-width: 35%;
       }
     }
   }
@@ -95,6 +93,7 @@
     opacity: 0;
     transition: all .2s ease;
     line-height: 20px;
+    height: 20px;
   }
 }
 .showing-info {
