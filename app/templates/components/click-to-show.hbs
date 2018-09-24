@@ -1,1 +1,6 @@
-{{yield}}
+<div class="click-to-show" onclick={{action "clicked"}}>
+  <div class="label">
+    <h4 class="info-header">{{attribute}} {{fa-icon "chevron-down"}}</h4>
+    <p class="info-data">{{get photo attribute}}</p>
+  </div>
+</div>

@@ -16,7 +16,6 @@
     margin-bottom: 15px;
 
     .modal-left {
-  
       img {
         max-width: 40vw;
         margin: 0;
@@ -49,6 +48,23 @@
     h2, h3, p, a, li {
       color: rgba(20, 20, 20, 0.7);
     }
+    
+    .description {
+      margin-bottom: 15px;
+    }
+
+    .other-info {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .click-to-show {
+        flex: 1;
+        margin-right: 15px;
+        max-width: 35%;
+      }
+    }
   }
 }
 
@@ -64,4 +80,28 @@
 
 .lazy-image-container {
   background: rgba(30, 30, 30, 0.8)
+}
+
+.click-to-show {
+  .label {
+    cursor: pointer;
+  }
+  .info-header {
+    text-transform: capitalize;
+    transition: all .2s ease;
+    margin-bottom: -20px;
+  }
+  .info-data {
+    opacity: 0;
+    transition: all .2s ease;
+    line-height: 20px;
+  }
+}
+.showing-info {
+  .info-header {
+    margin-bottom: 5px;
+  }
+  .info-data {
+    opacity: 1
+  }
 }

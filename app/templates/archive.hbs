@@ -20,7 +20,14 @@
         </div>
       </div>
       <div class="info">
-        <h3>helo</h3>
+        <div class="description">
+          {{click-to-show photo=currentPhoto attribute='description'}}
+        </div>
+        <div class="other-info">
+          {{click-to-show photo=currentPhoto attribute='location'}}
+          {{click-to-show photo=currentPhoto attribute='photographer'}}
+          {{click-to-show photo=currentPhoto attribute='year'}}
+        </div>
       </div>
     </div>
   {{/modal-dialog}}
