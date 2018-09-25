@@ -17,4 +17,4 @@ npm-debug.log*
 testem.log
 .firebaserc
 firebase.json
-
+.firebase/
