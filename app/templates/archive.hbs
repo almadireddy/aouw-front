@@ -11,22 +11,22 @@
     <div class="modal-content">
       <div class="image-quote">
         <div class="modal-left">
-          <img src={{imgSrc}} alt="">
+          <img src={{imgSrc}} alt="" onclick={{action 'showQuoteOnImage'}}>
         </div>
         <div class="modal-right">
           <div class="quote">
-            <h2>{{quote}}</h2>
+            <h2 id="quote"></h2>
           </div>
         </div>
       </div>
       <div class="info">
         <div class="description">
-          {{click-to-show photo=currentPhoto attribute='description'}}
+          {{click-to-show model=model photo=currentPhoto attribute='description'}}
         </div>
         <div class="other-info">
-          {{click-to-show photo=currentPhoto attribute='location'}}
-          {{click-to-show photo=currentPhoto attribute='photographer'}}
-          {{click-to-show photo=currentPhoto attribute='year'}}
+          {{click-to-show model=model photo=currentPhoto attribute='location'}}
+          {{click-to-show model=model photo=currentPhoto attribute='photographer'}}
+          {{click-to-show model=model photo=currentPhoto attribute='year'}}
         </div>
       </div>
     </div>

@@ -1,0 +1,45 @@
+@media print {
+  body, html {
+    padding: 50px;
+  }
+  nav, .nav {
+    display: none;
+  }
+  .ember-modal-dialog, .modal-content {
+    box-shadow: none;
+    background-color: lighten($tan, 10);
+  }
+  .ember-modal-wrapper.emd-animatable.emd-wrapper-target-attachment-center .ember-modal-overlay {
+    background-color: #fff;
+    padding-left: 72px;
+  }
+  .full-container {
+    display: none;
+  }
+  .modal-left {
+    img {
+      max-height: 70vh;
+    }
+  }
+  .info {
+    h2, h3, p, a, li {
+      color: rgba(20, 20, 20, 0.7);
+    }
+
+    .description {
+      margin-bottom: 15px;
+    }
+
+    .other-info {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .click-to-show {
+        flex: 1;
+        margin-right: 15px;
+      }
+    }
+  }
+}

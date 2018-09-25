@@ -16,6 +16,10 @@ export default Ember.Controller.extend({
     
     toggleModal() {
       this.toggleProperty('isShowingModal') 
+    },
+
+    showQuoteOnImage() {
+      document.getElementById('quote').innerText = this.get('quote')
     }
   }
 });
