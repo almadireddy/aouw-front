@@ -6,6 +6,11 @@
 
 body, html {
   background-color: lighten($tan, 20);
+  height: 100%;
+}
+
+#ember327 {
+  height: 100%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .full-container {
   width: 100%;
+  padding-top: 75px;
 }
 
 .section {
@@ -77,6 +83,7 @@ a, p, li {
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: 100%;
   
   .collections {
     display: flex;
@@ -154,7 +161,9 @@ a, p, li {
       }
     }
   }
-  .footer {
+}
+
+.footer {
     padding: 50px;
     background: #2b2b2b;
 
@@ -169,4 +178,3 @@ a, p, li {
       }
     }
   }
-}
