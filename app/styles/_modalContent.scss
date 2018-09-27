@@ -11,8 +11,11 @@
     margin-bottom: 15px;
 
     .modal-left {
+      max-height: 70vh;
+      display: inline-block;
       img {
         margin: 0;
+        max-height: 70vh;
       }
     }
   
