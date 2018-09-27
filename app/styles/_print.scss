@@ -1,6 +1,9 @@
 @media print {
   body, html {
     padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   nav, .nav {
     display: none;
@@ -13,8 +16,14 @@
     background-color: #fff;
     padding-left: 72px;
   }
-  .full-container {
+  .full-container, .grid {
     display: none;
+  }
+  .liquid-dialog-container {
+    padding: 50px;
+    position: absolute;
+    top:0;
+    left:0;
   }
   .modal-left {
     img {
