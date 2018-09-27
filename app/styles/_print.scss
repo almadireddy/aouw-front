@@ -14,16 +14,13 @@
   }
   .ember-modal-wrapper.emd-animatable.emd-wrapper-target-attachment-center .ember-modal-overlay {
     background-color: #fff;
-    padding-left: 72px;
+    padding-top: 72px;
   }
   .full-container, .grid {
     display: none;
   }
-  .liquid-dialog-container {
-    padding: 50px;
-    position: absolute;
-    top:0;
-    left:0;
+  .ember-modal-dialog {
+    margin-top: 0;
   }
   .modal-left {
     img {
@@ -33,10 +30,12 @@
 
   .modal-right {
     .quote {
-      h2 {
+      #quote {
         font-family: 'Volkhov', sans-serif;
-        font-size: 30px;
-        line-height: 26px;
+        font-size: 42px;
+        line-height: 50px;
+        text-shadow: 0 5px 25px rgba(30, 30, 30, 0.8);
+        width: inherit;
       }
     }
   }
@@ -46,8 +45,17 @@
       color: rgba(20, 20, 20, 0.7);
     }
 
+    .info-header {
+      font-size: 28px;
+      font-family: 'Source Sans Pro';
+      text-transform: uppercase;
+    }
+    .info-data {
+      font-size: 28px;
+    }
+
     .description {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 
     .other-info {

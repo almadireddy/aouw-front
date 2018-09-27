@@ -23,7 +23,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      padding: 30px;
+      padding: 25px;
 
       .quote {
         width: 100%;
@@ -45,9 +45,15 @@
     h2, h3, p, a, li {
       color: rgba(20, 20, 20, 0.7);
     }
-    
-    .description {
-      margin-bottom: 15px;
+  
+
+    .info-header {
+      font-family: 'Source Sans Pro';
+      text-transform: uppercase;
+    }
+
+    .info-data {
+      display: inline;
     }
 
     .other-info {
@@ -59,6 +65,7 @@
       .click-to-show {
         flex: 1;
         margin-right: 15px;
+        margin-bottom: 15px;
       }
     }
   }

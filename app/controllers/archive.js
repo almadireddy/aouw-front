@@ -6,6 +6,7 @@ export default Ember.Controller.extend({
   imgSrc: null,
   currentPhoto: null,
 
+  
   actions: {
     showPictureModal(quote, nypl, photo) {
       this.set('imgSrc', 'https://images.nypl.org/index.php?id='+ nypl +'&t=w');
@@ -19,6 +20,10 @@ export default Ember.Controller.extend({
     },
 
     showQuoteOnImage() {
+      let imageWidth = document.getElementById('modal-image').clientWidth;
+      document.getElementById('quote').style.width = imageWidth + 'px';
+      document.getElementById('quote-container').style.width = imageWidth + 'px';
+      document.getElementById('info-section').style.width = imageWidth + 'px';
       document.getElementById('quote').innerText = this.get('quote')
     }
   }
