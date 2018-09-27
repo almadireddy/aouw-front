@@ -45,11 +45,14 @@
     h2, h3, p, a, li {
       color: rgba(20, 20, 20, 0.7);
     }
-  
 
     .info-header {
       font-family: 'Source Sans Pro';
       text-transform: uppercase;
+    }
+
+    .description {
+      margin-bottom: 15px;
     }
 
     .info-data {
