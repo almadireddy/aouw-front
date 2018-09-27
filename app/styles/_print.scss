@@ -21,6 +21,17 @@
       max-height: 70vh;
     }
   }
+
+  .modal-right {
+    .quote {
+      h2 {
+        font-family: 'Volkhov', sans-serif;
+        font-size: 30px;
+        line-height: 26px;
+      }
+    }
+  }
+  
   .info {
     h2, h3, p, a, li {
       color: rgba(20, 20, 20, 0.7);

@@ -117,16 +117,7 @@ a, p, li {
       background-image: url('../images/candid-collection.jpg');
     }
   }
-  .index-body-outer {
-    display: flex;
-    flex-direction: row;
-    
-    justify-content: flex-start; /* align items in Main Axis */
-    align-items: stretch; /* align items in Cross Axis */
-    align-content: stretch; /* Extra space in Cross Axis */
-    flex: 1;
-
-  }
+  
   .index-body {
     flex: 1;
     display: flex;
