@@ -13,13 +13,12 @@ export default Ember.Component.extend({
     document.getElementById('quote').style.width = imageWidth + 'px';
     document.getElementById('quote-container').style.width = imageWidth + 'px';
     document.getElementById('info-section').style.width = imageWidth + 'px';
-    
+
     this.set('quote', literature.content[Math.floor(rand)].__data.quote);
   },
   
   actions: {
-    clicked: function(e) {
-      console.log(this.get('attribute'))
+    clicked: function() {
       document.getElementById('quote').innerText = this.get('quote')
     }
   }
