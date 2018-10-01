@@ -18,3 +18,5 @@ testem.log
 .firebaserc
 firebase.json
 .firebase/
+
+/public/images/*.jpeg
