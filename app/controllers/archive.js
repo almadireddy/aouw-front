@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
   
   actions: {
     showPictureModal(quote, nypl, photo) {
-      this.set('imgSrc', 'https://images.nypl.org/index.php?id='+ nypl +'&t=w');
+      this.set('imgSrc', 'images/'+ nypl +'.jpeg');
       this.set('quote', quote);
       this.set('isShowingModal', true);
       this.set('currentPhoto', photo);
