@@ -9,7 +9,7 @@ body, html {
   height: 100%;
 }
 
-#ember320 {
+body > .ember-view:not(.liquid-destination) {
   height: 100%
 }
 
@@ -155,17 +155,32 @@ a, p, li {
 }
 
 .footer {
-    padding: 50px;
-    background: #2b2b2b;
+  background: #2b2b2b;
+  height: 100px;
+  position:absolute;
+  bottom:0;
+  padding-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      
-      h4 {
-        color: lighten($tan, 20);
-      }
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    h4, a {
+      color: lighten($tan, 20);
+      text-align: center;
     }
   }
+}
+
+.credits {
+  margin-top: 50px;
+  p {
+    margin-bottom: 15px;
+  }
+}

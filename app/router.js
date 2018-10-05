@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('archive');
+  this.route('credits');
 });
 
 export default Router;
