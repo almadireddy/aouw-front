@@ -126,7 +126,7 @@ a, p, li {
     align-items: center; 
     background-image: url('../images/content-bg.jpg');
     background-size: cover;
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
 
     .main-logo {
       flex: 1;
@@ -147,7 +147,7 @@ a, p, li {
       padding: 25px;
       background: lighten($tan, 20);
 
-      p {
+      p, h2 {
         margin-bottom: 15px;
       }
     }

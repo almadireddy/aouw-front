@@ -5,7 +5,6 @@ export default Ember.Controller.extend({
   quote: null,
   imgSrc: null,
   currentPhoto: null,
-
   
   actions: {
     showPictureModal(quote, nypl, photo) {
@@ -25,6 +24,7 @@ export default Ember.Controller.extend({
       document.getElementById('quote-container').style.width = imageWidth + 'px';
       document.getElementById('info-section').style.width = imageWidth + 'px';
       document.getElementById('quote').innerText = this.get('quote')
+      document.getElementById('description').getElementsByClassName('info-data')[0].innerText = this.get('currentPhoto').get('description');
     }
   }
 });
