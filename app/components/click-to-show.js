@@ -20,7 +20,12 @@ export default Ember.Component.extend({
   actions: {
     clicked: function() {
       document.getElementById('quote').innerText = this.get('quote');
-      document.getElementById('description').getElementsByClassName('info-data')[0].innerText = this.get('title') + ', ' + this.get('author');
+      let imageWidth = document.getElementById('modal-image').clientWidth;
+      document.getElementById('description').getElementsByClassName('info-data')[0].innerText = Ember.String.htmlSafe(this.get('title')) + ', ' + this.get('author');
+      document.getElementById('description').style.width = imageWidth + 'px';
+      document.getElementById('quote').style.width = imageWidth + 'px';
+      document.getElementById('quote-container').style.width = imageWidth + 'px';
+      document.getElementById('info-section').style.width = imageWidth + 'px';
     }
   }
 });

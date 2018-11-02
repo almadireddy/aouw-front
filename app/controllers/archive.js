@@ -23,7 +23,7 @@ export default Ember.Controller.extend({
       document.getElementById('quote').style.width = imageWidth + 'px';
       document.getElementById('quote-container').style.width = imageWidth + 'px';
       document.getElementById('info-section').style.width = imageWidth + 'px';
-      document.getElementById('quote').innerText = this.get('quote')
+      document.getElementById('quote').innerText = this.get('quote');
       document.getElementById('description').getElementsByClassName('info-data')[0].innerText = this.get('currentPhoto').get('description');
     }
   }
