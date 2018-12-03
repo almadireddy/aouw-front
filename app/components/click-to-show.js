@@ -21,8 +21,6 @@ export default Ember.Component.extend({
     clicked: function() {
       document.getElementById('quote').innerText = this.get('quote');
       let imageWidth = document.getElementById('modal-image').clientWidth;
-      document.getElementById('description').getElementsByClassName('info-data')[0].innerText = Ember.String.htmlSafe(this.get('title')) + ', ' + this.get('author');
-      document.getElementById('description').style.width = imageWidth + 'px';
       document.getElementById('quote').style.width = imageWidth + 'px';
       document.getElementById('quote-container').style.width = imageWidth + 'px';
       document.getElementById('info-section').style.width = imageWidth + 'px';

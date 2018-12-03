@@ -17,7 +17,7 @@ export default Ember.Component.extend({
 
   actions: {
     imageClicked() {
-      this.sendAction('show', this.get('quote'), this.get('photo').get('nypl'), this.get('photo'), this.get('descriptionString'));
+      this.sendAction('show', this.get('quote'), this.get('photo').get('nypl'), this.get('photo'));
     }
   }
 });
