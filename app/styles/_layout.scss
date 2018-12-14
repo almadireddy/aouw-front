@@ -142,13 +142,17 @@ a, p, li {
     }
 
     .archive-info {
-      flex: 1;
+      flex: 2;
       margin-left: 25px;
-      padding: 25px;
-      background: lighten($tan, 20);
+      padding: 35px;
+      background: lighten($tan, 25);
 
       p, h2 {
         margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 18px;
       }
     }
   }
