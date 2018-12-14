@@ -163,7 +163,9 @@ a, p, li {
   width: 100%;
   display: flex;
   justify-content: center;
+}
 
+.nav {
   .container {
     flex: 1;
     display: flex;
@@ -174,6 +176,14 @@ a, p, li {
     h4, a {
       color: lighten($tan, 20);
       text-align: center;
+      font-family: Volkhov, serif;
+      text-decoration: none;
+      transition: all .2s ease;
+      box-shadow: 0 2px 0 0 transparent;
+
+      &:hover {
+        box-shadow: 0 2px 0 0 lighten($tan, 20) 
+      }
     }
   }
 }
